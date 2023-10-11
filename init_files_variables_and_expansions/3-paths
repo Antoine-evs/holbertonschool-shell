@@ -1,2 +1,2 @@
 #!/bin/bash
-echo `expr match $PATH [/]`
+echo `tr -dc '/' <<< $PATH | wc -c`
